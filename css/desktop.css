@@ -10,6 +10,8 @@
 
   /* --------------- HEADER --------------- */
   .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 40px;
   }
@@ -19,6 +21,19 @@
 
   /* --------------- HERO --------------- */
   .hero {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(46, 47, 66, 0.7)),
+        to(rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/hero-bg.jpg);
+    background-image: -o-linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -29,9 +44,24 @@
   }
 
   @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(46, 47, 66, 0.7)),
+          to(rgba(46, 47, 66, 0.7))
+        ),
+        url(../images/hero-bg2x.jpg);
+      background-image: -o-linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg2x.jpg);
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -50,12 +80,19 @@
 
   /* --------------- FEATURES --------------- */
   .features-item {
+    -ms-flex-preferred-size: calc((100% - 3 * 24px) / 4);
     flex-basis: calc((100% - 3 * 24px) / 4);
   }
 
   .features-icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 264px;
     height: 112px;
@@ -92,11 +129,14 @@
   }
 
   .examples-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 24px;
   }
 
   .examples-item {
+    -ms-flex-preferred-size: calc((100% - 2 * 24px) / 3);
     flex-basis: calc((100% - 2 * 24px) / 3);
   }
 

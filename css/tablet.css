@@ -9,6 +9,8 @@
   }
 
   .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 40px;
   }
@@ -22,6 +24,8 @@
     text-decoration: none;
     color: var(--dark-color);
     padding: 24px 0;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -62,6 +66,8 @@
     text-decoration: none;
     color: var(--text-color);
     /* padding: 24px 0; */
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -80,6 +86,19 @@
 
   /* --------------- HERO --------------- */
   .hero {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(46, 47, 66, 0.7)),
+        to(rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/hero-bg-tablet.jpg);
+    background-image: -o-linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tablet.jpg);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -91,9 +110,24 @@
   }
 
   @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(46, 47, 66, 0.7)),
+          to(rgba(46, 47, 66, 0.7))
+        ),
+        url(../images/hero-bg-tablet2x.jpg);
+      background-image: -o-linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tablet2x.jpg);
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -112,12 +146,16 @@
 
   /* --------------- FEATURES --------------- */
   .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 72px 24px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
   .features-item {
+    -ms-flex-preferred-size: calc((100% - 1 * 24px) / 2);
     flex-basis: calc((100% - 1 * 24px) / 2);
   }
 
@@ -135,8 +173,11 @@
   }
 
   .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 64px 24px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
@@ -150,7 +191,14 @@
     padding-top: 96px;
   }
 
+  .customers-item {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+
   .customers-list {
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
     column-gap: 24px;
   }
 
@@ -161,8 +209,13 @@
   /* --------------- FOOTER --------------- */
 
   .footer > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 72px 24px;
   }
@@ -184,6 +237,8 @@
   }
 
   .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 24px;
   }
@@ -207,6 +262,8 @@
 
   .filter {
     max-width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 64px;
   }
