@@ -75,5 +75,8 @@
 <symbol id="icon-paper-plane" viewBox="0 0 32 32">
 <path d="M32 2.667l-32 15 10.227 3.156 15.773-12.323-11.997 13.488 0.009 0.004-0.012-0.004v7.345l5.735-5.576 7.267 2.243 4.999-23.333z"></path>
 </symbol>
+<symbol id="icon-menu-hamburger" viewBox="0 0 47 32">
+<path stroke-width="4.3636" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M1.961 29.153h42.964M1.961 15.615h42.964M1.961 2.077h42.964"></path>
+</symbol>
 </defs>
 </svg>

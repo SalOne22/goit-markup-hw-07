@@ -1,0 +1,131 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 120px 0;
+  }
+
+  /* --------------- HEADER --------------- */
+  .contacts {
+    display: flex;
+    gap: 40px;
+  }
+  .contacts-link {
+    line-height: 1.5;
+  }
+
+  /* --------------- HERO --------------- */
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg2x.jpg);
+    }
+  }
+
+  .hero > .container {
+    width: 700px;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  /* --------------- FEATURES --------------- */
+  .features-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  .features-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--light-color);
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+
+  .features-item-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  .features-item-text {
+    font-weight: 400;
+  }
+
+  /* --------------- EXAMPLES --------------- */
+  .examples {
+    display: block;
+    padding-top: 0;
+  }
+
+  .examples-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-color);
+    margin-bottom: 72px;
+  }
+
+  .examples-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .examples-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+
+  .examples-img {
+  }
+
+  /* --------------- FOOTER --------------- */
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer > .container {
+    gap: 0;
+  }
+
+  .footer-soc {
+    margin-left: 120px;
+  }
+
+  .footer-subscribe {
+    margin-left: 80px;
+  }
+
+  /* --------------- PORTFOLIO --------------- */
+  .portfolio {
+    padding-top: 96px;
+  }
+
+  .filter {
+    margin-bottom: 72px;
+  }
+}

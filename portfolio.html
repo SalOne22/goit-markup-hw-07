@@ -19,6 +19,8 @@
       referrerpolicy="no-referrer"
     />
     <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/tablet.css" rel="stylesheet" />
+    <link href="./css/desktop.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -45,16 +47,109 @@
         </nav>
         <ul class="contacts">
           <li>
-            <a class="contacts-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="contacts-link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="contacts-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
+            <a class="contacts-link" href="tel:+110001111111">
+              +11 (000) 111-11-11</a
             >
           </li>
         </ul>
+        <button class="menu-open js-open-menu" type="button">
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        <div class="menu js-menu-container">
+          <button class="menu-close js-close-menu" type="button">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="menu-navigation">
+              <li class="menu-navigation-item">
+                <a class="menu-navigation-link" href="./index.html">Studio</a>
+              </li>
+              <li class="menu-navigation-item">
+                <a
+                  class="menu-navigation-link current-page"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="menu-navigation-item">
+                <a class="menu-navigation-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <ul class="menu-contacts">
+              <li>
+                <a class="menu-contacts-phone" href="tel:+110001111111">
+                  +11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="menu-contacts-email" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-soc-list">
+              <li class="menu-soc-item">
+                <a
+                  href=""
+                  target="_blank"
+                  class="menu-soc-link"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="menu-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-soc-item">
+                <a
+                  href=""
+                  target="_blank"
+                  class="menu-soc-link"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="menu-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-soc-item">
+                <a
+                  href=""
+                  target="_blank"
+                  class="menu-soc-link"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="menu-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-soc-item">
+                <a
+                  href=""
+                  target="_blank"
+                  class="menu-soc-link"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="menu-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -80,15 +175,40 @@
           </ul>
           <ul class="cards">
             <li class="card">
-              <a class="card-link" href="" rel="noopener noreferrer nofollow">
+              <a
+                class="card-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <div class="overlay">
-                  <img
-                    class="card-img"
-                    src="./images/banking_app.jpg"
-                    alt="Banking app concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="card-img">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/banking_app396w.jpg   1x,
+                        ./images/banking_app396w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/banking_app356w.jpg   1x,
+                        ./images/banking_app356w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/banking_app.jpg   1x,
+                        ./images/banking_app2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/banking_app.jpg"
+                      alt="Banking app concept"
+                    />
+                  </picture>
                   <p class="overlay-content">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -102,15 +222,40 @@
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="" rel="noopener noreferrer nofollow">
+              <a
+                class="card-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <div class="overlay">
-                  <img
-                    class="card-img"
-                    src="./images/cashless_payment.jpg"
-                    alt="Cashless payment app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="card-img">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cashless_payment396w.jpg   1x,
+                        ./images/cashless_payment396w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/cashless_payment356w.jpg   1x,
+                        ./images/cashless_payment356w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cashless_payment.jpg   1x,
+                        ./images/cashless_payment2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/cashless_payment.jpg"
+                      alt="Banking app concept"
+                    />
+                  </picture>
                   <p class="overlay-content">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -124,15 +269,40 @@
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="" rel="noopener noreferrer nofollow">
+              <a
+                class="card-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <div class="overlay">
-                  <img
-                    class="card-img"
-                    src="./images/meditation_app.jpg"
-                    alt="Meditation app concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="card-img">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/meditation_app396w.jpg   1x,
+                        ./images/meditation_app396w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/meditation_app356w.jpg   1x,
+                        ./images/meditation_app356w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/meditation_app.jpg   1x,
+                        ./images/meditation_app2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/meditation_app.jpg"
+                      alt="Banking app concept"
+                    />
+                  </picture>
                   <p class="overlay-content">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -146,15 +316,40 @@
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="" rel="noopener noreferrer nofollow">
+              <a
+                class="card-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <div class="overlay">
-                  <img
-                    class="card-img"
-                    src="./images/taxi_service.jpg"
-                    alt="Taxi service app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="card-img">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/taxi_service396w.jpg   1x,
+                        ./images/taxi_service396w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/taxi_service356w.jpg   1x,
+                        ./images/taxi_service356w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/taxi_service.jpg   1x,
+                        ./images/taxi_service2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/taxi_service.jpg"
+                      alt="Banking app concept"
+                    />
+                  </picture>
                   <p class="overlay-content">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -168,15 +363,40 @@
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="" rel="noopener noreferrer nofollow">
+              <a
+                class="card-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <div class="overlay">
-                  <img
-                    class="card-img"
-                    src="./images/screen_illustrations.jpg"
-                    alt="Various screen illustrations"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="card-img">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/screen_illustrations396w.jpg   1x,
+                        ./images/screen_illustrations396w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/screen_illustrations356w.jpg   1x,
+                        ./images/screen_illustrations356w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/screen_illustrations.jpg   1x,
+                        ./images/screen_illustrations2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/screen_illustrations.jpg"
+                      alt="Banking app concept"
+                    />
+                  </picture>
                   <p class="overlay-content">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -190,15 +410,40 @@
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="" rel="noopener noreferrer nofollow">
+              <a
+                class="card-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <div class="overlay">
-                  <img
-                    class="card-img"
-                    src="./images/online_courses.jpg"
-                    alt="Mobile online courses"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="card-img">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/online_courses396w.jpg   1x,
+                        ./images/online_courses396w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/online_courses356w.jpg   1x,
+                        ./images/online_courses356w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/online_courses.jpg   1x,
+                        ./images/online_courses2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/online_courses.jpg"
+                      alt="Banking app concept"
+                    />
+                  </picture>
                   <p class="overlay-content">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -212,15 +457,40 @@
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="" rel="noopener noreferrer nofollow">
+              <a
+                class="card-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <div class="overlay">
-                  <img
-                    class="card-img"
-                    src="./images/inst_stories_concept.jpg"
-                    alt="Various stories concepts"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="card-img">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/inst_stories_concept396w.jpg   1x,
+                        ./images/inst_stories_concept396w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/inst_stories_concept356w.jpg   1x,
+                        ./images/inst_stories_concept356w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/inst_stories_concept.jpg   1x,
+                        ./images/inst_stories_concept2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/inst_stories_concept.jpg"
+                      alt="Banking app concept"
+                    />
+                  </picture>
                   <p class="overlay-content">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -234,15 +504,40 @@
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="" rel="noopener noreferrer nofollow">
+              <a
+                class="card-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <div class="overlay">
-                  <img
-                    class="card-img"
-                    src="./images/organic_food.jpg"
-                    alt="Vegetables in bag"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="card-img">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/organic_food396w.jpg   1x,
+                        ./images/organic_food396w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/organic_food356w.jpg   1x,
+                        ./images/organic_food356w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/organic_food.jpg   1x,
+                        ./images/organic_food2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/organic_food.jpg"
+                      alt="Banking app concept"
+                    />
+                  </picture>
                   <p class="overlay-content">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -256,15 +551,40 @@
               </a>
             </li>
             <li class="card">
-              <a class="card-link" href="" rel="noopener noreferrer nofollow">
+              <a
+                class="card-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <div class="overlay">
-                  <img
-                    class="card-img"
-                    src="./images/fresh_coffe.jpg"
-                    alt="Cup with coffe"
-                    width="360"
-                    height="300"
-                  />
+                  <picture class="card-img">
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/fresh_coffe396w.jpg   1x,
+                        ./images/fresh_coffe396w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/fresh_coffe356w.jpg   1x,
+                        ./images/fresh_coffe356w2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/fresh_coffe.jpg   1x,
+                        ./images/fresh_coffe2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/fresh_coffe.jpg"
+                      alt="Banking app concept"
+                    />
+                  </picture>
                   <p class="overlay-content">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -298,6 +618,7 @@
             <li class="footer-soc-item">
               <a
                 href=""
+                target="_blank"
                 class="footer-soc-link"
                 rel="noopener noreferrer nofollow"
               >
@@ -309,6 +630,7 @@
             <li class="footer-soc-item">
               <a
                 href=""
+                target="_blank"
                 class="footer-soc-link"
                 rel="noopener noreferrer nofollow"
               >
@@ -320,6 +642,7 @@
             <li class="footer-soc-item">
               <a
                 href=""
+                target="_blank"
                 class="footer-soc-link"
                 rel="noopener noreferrer nofollow"
               >
@@ -331,6 +654,7 @@
             <li class="footer-soc-item">
               <a
                 href=""
+                target="_blank"
                 class="footer-soc-link"
                 rel="noopener noreferrer nofollow"
               >
@@ -362,5 +686,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
