@@ -140,9 +140,6 @@
     flex-basis: calc((100% - 2 * 24px) / 3);
   }
 
-  .examples-img {
-  }
-
   /* --------------- FOOTER --------------- */
   .footer {
     padding: 100px 0;
