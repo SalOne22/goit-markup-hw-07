@@ -31,7 +31,7 @@
 
   .site-navigation-link:hover,
   .site-navigation-link:focus {
-    color: var(--text-color);
+    color: var(--pressed);
   }
 
   .site-navigation-item {
@@ -105,8 +105,8 @@
       ),
       url(../images/hero-bg-tablet.jpg);
     max-width: 768px;
+    padding: 112px 0;
     padding-bottom: 108px;
-    padding: 188px 0;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -287,7 +287,7 @@
     letter-spacing: 0.04em;
   }
 
-  .contacts-link + .contacts-link {
+  .contacts-item + .contacts-item {
     margin-top: 4px;
   }
 
