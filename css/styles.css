@@ -1086,7 +1086,7 @@ ol {
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
 }
-.private-label span {
+.private-label .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
