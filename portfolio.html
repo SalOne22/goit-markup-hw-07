@@ -158,23 +158,23 @@
           <h1 class="visually-hidden">Portfolio</h1>
           <ul class="filter">
             <li class="filter-item">
-              <button class="filter-btn" type="button">All</button>
+              <button class="filter-btn" type="button" data-filter="*" onclick=filterCards(event)>All</button>
             </li>
             <li class="filter-item">
-              <button class="filter-btn" type="button">Web Site</button>
+              <button class="filter-btn" type="button" data-filter="website" onclick=filterCards(event)>Web Site</button>
             </li>
             <li class="filter-item">
-              <button class="filter-btn" type="button">App</button>
+              <button class="filter-btn" type="button" data-filter="app" onclick=filterCards(event)>App</button>
             </li>
             <li class="filter-item">
-              <button class="filter-btn" type="button">Design</button>
+              <button class="filter-btn" type="button" data-filter="design" onclick=filterCards(event)>Design</button>
             </li>
             <li class="filter-item">
-              <button class="filter-btn" type="button">Marketing</button>
+              <button class="filter-btn" type="button" data-filter="marketing" onclick=filterCards(event)>Marketing</button>
             </li>
           </ul>
           <ul class="cards">
-            <li class="card">
+            <li class="card" data-category="app">
               <a
                 class="card-link"
                 href=""
@@ -222,7 +222,7 @@
                 </div>
               </a>
             </li>
-            <li class="card">
+            <li class="card" data-category="marketing">
               <a
                 class="card-link"
                 href=""
@@ -270,7 +270,7 @@
                 </div>
               </a>
             </li>
-            <li class="card">
+            <li class="card" data-category="app">
               <a
                 class="card-link"
                 href=""
@@ -318,7 +318,7 @@
                 </div>
               </a>
             </li>
-            <li class="card">
+            <li class="card" data-category="marketing">
               <a
                 class="card-link"
                 href=""
@@ -366,7 +366,7 @@
                 </div>
               </a>
             </li>
-            <li class="card">
+            <li class="card" data-category="design">
               <a
                 class="card-link"
                 href=""
@@ -414,7 +414,7 @@
                 </div>
               </a>
             </li>
-            <li class="card">
+            <li class="card" data-category="marketing">
               <a
                 class="card-link"
                 href=""
@@ -462,7 +462,7 @@
                 </div>
               </a>
             </li>
-            <li class="card">
+            <li class="card" data-category="design">
               <a
                 class="card-link"
                 href=""
@@ -510,7 +510,7 @@
                 </div>
               </a>
             </li>
-            <li class="card">
+            <li class="card" data-category="website">
               <a
                 class="card-link"
                 href=""
@@ -558,7 +558,7 @@
                 </div>
               </a>
             </li>
-            <li class="card">
+            <li class="card" data-category="website">
               <a
                 class="card-link"
                 href=""
@@ -702,5 +702,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="js/filter.js"></script>
   </body>
 </html>

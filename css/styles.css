@@ -819,6 +819,10 @@ ol {
   max-width: 396px;
 }
 
+.card.hidden {
+  display: none;
+}
+
 .card-link {
   text-decoration: none;
   display: block;
