@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--text-color);
 }
 
@@ -79,7 +79,7 @@ ol {
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
@@ -140,7 +140,8 @@ ol {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -280,19 +281,29 @@ ol {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg-mobile.jpg);
+    image-set(
+      url('../images/hero-bg-mobile.webp') type('image/webp'),
+      url('../images/hero-bg-mobile.jpg') type('image/jpeg')
+    );
   background-image: -webkit-gradient(
       linear,
-      left top, left bottom,
+      left top,
+      left bottom,
       from(rgba(46, 47, 66, 0.7)),
       to(rgba(46, 47, 66, 0.7))
     ),
-    url(../images/hero-bg-mobile.jpg);
+    image-set(
+      url('../images/hero-bg-mobile.webp') type('image/webp'),
+      url('../images/hero-bg-mobile.jpg') type('image/jpeg')
+    );
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg-mobile.jpg);
+    image-set(
+      url('../images/hero-bg-mobile.webp') type('image/webp'),
+      url('../images/hero-bg-mobile.jpg') type('image/jpeg')
+    );
   background-color: var(--dark-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -313,19 +324,29 @@ ol {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg-mobile2x.jpg);
+      image-set(
+        url('../images/hero-bg-mobile2x.webp') type('image/webp'),
+        url('../images/hero-bg-mobile2x.jpg') type('image/jpeg')
+      );
     background-image: -webkit-gradient(
         linear,
-        left top, left bottom,
+        left top,
+        left bottom,
         from(rgba(46, 47, 66, 0.7)),
         to(rgba(46, 47, 66, 0.7))
       ),
-      url(../images/hero-bg-mobile2x.jpg);
+      image-set(
+        url('../images/hero-bg-mobile2x.webp') type('image/webp'),
+        url('../images/hero-bg-mobile2x.jpg') type('image/jpeg')
+      );
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg-mobile2x.jpg);
+      image-set(
+        url('../images/hero-bg-mobile2x.webp') type('image/webp'),
+        url('../images/hero-bg-mobile2x.jpg') type('image/jpeg')
+      );
   }
 }
 
@@ -831,7 +852,8 @@ ol {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -899,7 +921,8 @@ ol {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -924,7 +947,7 @@ ol {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 .is-hidden {
@@ -955,7 +978,8 @@ ol {
   transition: -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -970,8 +994,8 @@ ol {
   .modal {
     top: 0;
     -webkit-transform: translate(-50%, 5%);
-        -ms-transform: translate(-50%, 5%);
-            transform: translate(-50%, 5%);
+    -ms-transform: translate(-50%, 5%);
+    transform: translate(-50%, 5%);
   }
 
   .backdrop.is-hidden .modal {

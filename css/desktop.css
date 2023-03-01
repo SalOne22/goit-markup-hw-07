@@ -25,19 +25,29 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg.jpg);
+      image-set(
+        url('../images/hero-bg.webp') type('image/webp'),
+        url('../images/hero-bg.jpg') type('image/jpeg')
+      );
     background-image: -webkit-gradient(
         linear,
-        left top, left bottom,
+        left top,
+        left bottom,
         from(rgba(46, 47, 66, 0.7)),
         to(rgba(46, 47, 66, 0.7))
       ),
-      url(../images/hero-bg.jpg);
+      image-set(
+        url('../images/hero-bg.webp') type('image/webp'),
+        url('../images/hero-bg.jpg') type('image/jpeg')
+      );
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bg.jpg);
+      image-set(
+        url('../images/hero-bg.webp') type('image/webp'),
+        url('../images/hero-bg.jpg') type('image/jpeg')
+      );
     max-width: 1440px;
     padding: 188px 0;
   }
@@ -52,19 +62,29 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-bg2x.jpg);
+        image-set(
+          url('../images/hero-bg2x.webp') type('image/webp'),
+          url('../images/hero-bg2x.jpg') type('image/jpeg')
+        );
       background-image: -webkit-gradient(
           linear,
-          left top, left bottom,
+          left top,
+          left bottom,
           from(rgba(46, 47, 66, 0.7)),
           to(rgba(46, 47, 66, 0.7))
         ),
-        url(../images/hero-bg2x.jpg);
+        image-set(
+          url('../images/hero-bg2x.webp') type('image/webp'),
+          url('../images/hero-bg2x.jpg') type('image/jpeg')
+        );
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-bg2x.jpg);
+        image-set(
+          url('../images/hero-bg2x.webp') type('image/webp'),
+          url('../images/hero-bg2x.jpg') type('image/jpeg')
+        );
     }
   }
 
