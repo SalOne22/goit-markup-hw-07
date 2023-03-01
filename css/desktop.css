@@ -25,6 +25,12 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
+      -webkit-image-set(url('../images/hero-bg.webp') type('image/webp'), url('../images/hero-bg.jpg')
+            type('image/jpeg'));
+    background-image: -o-linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       image-set(
         url('../images/hero-bg.webp') type('image/webp'),
         url('../images/hero-bg.jpg') type('image/jpeg')
@@ -40,6 +46,12 @@
         url('../images/hero-bg.webp') type('image/webp'),
         url('../images/hero-bg.jpg') type('image/jpeg')
       );
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      -webkit-image-set(url('../images/hero-bg.webp') type('image/webp'), url('../images/hero-bg.jpg')
+            type('image/jpeg'));
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -62,6 +74,12 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
+        -webkit-image-set(url('../images/hero-bg2x.webp') type('image/webp'), url('../images/hero-bg2x.jpg')
+              type('image/jpeg'));
+      background-image: -o-linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
         image-set(
           url('../images/hero-bg2x.webp') type('image/webp'),
           url('../images/hero-bg2x.jpg') type('image/jpeg')
@@ -77,6 +95,12 @@
           url('../images/hero-bg2x.webp') type('image/webp'),
           url('../images/hero-bg2x.jpg') type('image/jpeg')
         );
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        -webkit-image-set(url('../images/hero-bg2x.webp') type('image/webp'), url('../images/hero-bg2x.jpg')
+              type('image/jpeg'));
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)

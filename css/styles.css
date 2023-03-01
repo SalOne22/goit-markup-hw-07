@@ -144,6 +144,8 @@ ol {
     -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu.is-open {
@@ -281,6 +283,12 @@ ol {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
+    -webkit-image-set(url('../images/hero-bg-mobile.webp') type('image/webp'), url('../images/hero-bg-mobile.jpg')
+          type('image/jpeg'));
+  background-image: -o-linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     image-set(
       url('../images/hero-bg-mobile.webp') type('image/webp'),
       url('../images/hero-bg-mobile.jpg') type('image/jpeg')
@@ -296,6 +304,12 @@ ol {
       url('../images/hero-bg-mobile.webp') type('image/webp'),
       url('../images/hero-bg-mobile.jpg') type('image/jpeg')
     );
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    -webkit-image-set(url('../images/hero-bg-mobile.webp') type('image/webp'), url('../images/hero-bg-mobile.jpg')
+          type('image/jpeg'));
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -324,6 +338,13 @@ ol {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
+      -webkit-image-set(url('../images/hero-bg-mobile2x.webp')
+            type('image/webp'), url('../images/hero-bg-mobile2x.jpg')
+            type('image/jpeg'));
+    background-image: -o-linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       image-set(
         url('../images/hero-bg-mobile2x.webp') type('image/webp'),
         url('../images/hero-bg-mobile2x.jpg') type('image/jpeg')
@@ -339,6 +360,13 @@ ol {
         url('../images/hero-bg-mobile2x.webp') type('image/webp'),
         url('../images/hero-bg-mobile2x.jpg') type('image/jpeg')
       );
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      -webkit-image-set(url('../images/hero-bg-mobile2x.webp')
+            type('image/webp'), url('../images/hero-bg-mobile2x.jpg')
+            type('image/jpeg'));
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -856,6 +884,8 @@ ol {
     -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-link:hover,
@@ -925,6 +955,8 @@ ol {
     -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-link:hover .overlay-content,
@@ -978,6 +1010,8 @@ ol {
   transition: -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
