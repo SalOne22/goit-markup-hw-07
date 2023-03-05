@@ -18,7 +18,6 @@
   .site-navigation-link {
     display: block;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -88,7 +87,8 @@
   .hero {
     background-image: -webkit-gradient(
         linear,
-        left top, left bottom,
+        left top,
+        left bottom,
         from(rgba(46, 47, 66, 0.7)),
         to(rgba(46, 47, 66, 0.7))
       ),
@@ -113,10 +113,8 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      -webkit-image-set(
-        url('../images/hero-bg-tablet.webp') type('image/webp'),
-        url('../images/hero-bg-tablet.jpg') type('image/jpeg')
-      );
+      -webkit-image-set(url('../images/hero-bg-tablet.webp') type('image/webp'), url('../images/hero-bg-tablet.jpg')
+            type('image/jpeg'));
     background-image: -o-linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -127,7 +125,8 @@
       );
     background-image: -webkit-gradient(
         linear,
-        left top, left bottom,
+        left top,
+        left bottom,
         from(rgba(46, 47, 66, 0.7)),
         to(rgba(46, 47, 66, 0.7))
       ),
@@ -141,7 +140,8 @@
             type('image/jpeg'));
     background-image: -webkit-gradient(
         linear,
-        left top, left bottom,
+        left top,
+        left bottom,
         from(rgba(46, 47, 66, 0.7)),
         to(rgba(46, 47, 66, 0.7))
       ),
@@ -153,10 +153,8 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      -webkit-image-set(
-        url('../images/hero-bg-tablet.webp') type('image/webp'),
-        url('../images/hero-bg-tablet.jpg') type('image/jpeg')
-      );
+      -webkit-image-set(url('../images/hero-bg-tablet.webp') type('image/webp'), url('../images/hero-bg-tablet.jpg')
+            type('image/jpeg'));
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -178,7 +176,8 @@
     .hero {
       background-image: -webkit-gradient(
           linear,
-          left top, left bottom,
+          left top,
+          left bottom,
           from(rgba(46, 47, 66, 0.7)),
           to(rgba(46, 47, 66, 0.7))
         ),
@@ -204,10 +203,9 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        -webkit-image-set(
-          url('../images/hero-bg-tablet2x.webp') type('image/webp'),
-          url('../images/hero-bg-tablet2x.jpg') type('image/jpeg')
-        );
+        -webkit-image-set(url('../images/hero-bg-tablet2x.webp')
+              type('image/webp'), url('../images/hero-bg-tablet2x.jpg')
+              type('image/jpeg'));
       background-image: -o-linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -218,7 +216,8 @@
         );
       background-image: -webkit-gradient(
           linear,
-          left top, left bottom,
+          left top,
+          left bottom,
           from(rgba(46, 47, 66, 0.7)),
           to(rgba(46, 47, 66, 0.7))
         ),
@@ -234,7 +233,8 @@
               type('image/jpeg'));
       background-image: -webkit-gradient(
           linear,
-          left top, left bottom,
+          left top,
+          left bottom,
           from(rgba(46, 47, 66, 0.7)),
           to(rgba(46, 47, 66, 0.7))
         ),
@@ -246,10 +246,9 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        -webkit-image-set(
-          url('../images/hero-bg-tablet2x.webp') type('image/webp'),
-          url('../images/hero-bg-tablet2x.jpg') type('image/jpeg')
-        );
+        -webkit-image-set(url('../images/hero-bg-tablet2x.webp')
+              type('image/webp'), url('../images/hero-bg-tablet2x.jpg')
+              type('image/jpeg'));
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -263,7 +262,7 @@
 
   .hero-title {
     display: inline-block;
-    font-size: 56px;
+    font-size: 3.5rem;
     line-height: 1.07;
     max-width: 570px;
     margin-bottom: 40px;
@@ -407,7 +406,7 @@
   }
 
   .contacts-link {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.33;
     letter-spacing: 0.04em;
   }
@@ -426,5 +425,8 @@
 
   .footer > .container {
     padding: 0 108px;
+  }
+  .card {
+    max-width: 356px;
   }
 }

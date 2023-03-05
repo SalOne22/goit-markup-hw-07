@@ -222,7 +222,7 @@
   }
 
   .features-item-title {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 500;
   }
@@ -239,7 +239,7 @@
 
   .examples-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
@@ -266,7 +266,8 @@
   }
 
   .footer > .container {
-    gap: 0;
+    column-gap: 0;
+    padding-right: 18px;
   }
 
   .footer-soc {
@@ -274,7 +275,7 @@
   }
 
   .footer-subscribe {
-    margin-left: 80px;
+    margin-left: auto;
   }
 
   /* --------------- PORTFOLIO --------------- */
@@ -286,6 +287,9 @@
     margin-bottom: 72px;
   }
 
+  .card {
+    max-width: 360px;
+  }
   .card-title {
     font-weight: 700;
   }
